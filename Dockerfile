@@ -52,8 +52,6 @@ RUN         set -x && \
 COPY        bin/    /
 COPY        conf.d  ${TEMPLATE_DIRECTORY}
 
-EXPOSE      ${GAME_CLIENT_PORT}/udp ${UDP_SOCKET_PORT}/udp ${SERVER_LIST_PORT}/udp ${RCON_PORT}/tcp
-
 VOLUME      ["${ARK_SERVER_VOLUME}"]
 WORKDIR     ${ARK_SERVER_VOLUME}
 
